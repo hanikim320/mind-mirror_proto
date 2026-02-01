@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마음 거울 - Mind Mirror</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>마음 거울 🪞</h1>
+            <p>그림을 보고 느껴지는 이야기를 들려주세요.</p>
+        </header>
+
+        <main id="test-section">
+            <div class="image-frame">
+                <img id="random-image" src="" alt="오늘의 그림">
+            </div>
+            <div class="input-area">
+                <textarea id="user-input" placeholder="그림 속 상황이나 인물의 마음이 어떤가요? (자유롭게 적어보세요)"></textarea>
+                <button id="analyze-btn">AI 마음 진단하기</button>
+            </div>
+        </main>
+
+        <div id="loading-section" class="hidden">
+            <div class="spinner"></div>
+            <p>AI가 마음을 읽고 있어요... 🤖</p>
+        </div>
+
+        <section id="result-section" class="hidden">
+            <div class="result-card">
+                <h2 id="result-title">분석 완료</h2>
+                <div class="result-content">
+                    <h3>📊 분석 요약</h3>
+                    <p id="result-desc"></p>
+                    <div class="goal-box">
+                        <h3>🚀 이번 주의 실천 목표</h3>
+                        <p id="result-goal"></p>
+                    </div>
+                </div>
+                <button id="retry-btn">다른 그림으로 다시 하기</button>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
